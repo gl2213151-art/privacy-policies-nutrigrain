@@ -1,9 +1,10 @@
+```css
 /* =======================================================
    Nutrigrain
    Hoja de estilos principal
-   Autor: Nutrigrain
-   Versión: 1.0
+   Versión: 1.1
 ======================================================= */
+
 
 /* RESET */
 
@@ -12,6 +13,7 @@
     padding:0;
     box-sizing:border-box;
 }
+
 
 /* VARIABLES */
 
@@ -40,6 +42,7 @@
 
 }
 
+
 /* GENERAL */
 
 html{
@@ -47,6 +50,7 @@ html{
     scroll-behavior:smooth;
 
 }
+
 
 body{
 
@@ -60,6 +64,7 @@ body{
 
 }
 
+
 /* CONTENEDOR */
 
 .container{
@@ -72,7 +77,9 @@ body{
 
 }
 
-/* HEADER */
+
+/* ================= HEADER ================= */
+
 
 header{
 
@@ -88,6 +95,7 @@ header{
 
 }
 
+
 header .container{
 
     display:flex;
@@ -100,9 +108,17 @@ header .container{
 
 }
 
+
+
 /* LOGO */
 
 .logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
 
     color:var(--primary);
 
@@ -112,7 +128,23 @@ header .container{
 
 }
 
-/* MENÚ */
+
+.logo img{
+
+    width:55px;
+
+    height:55px;
+
+    object-fit:contain;
+
+    display:block;
+
+}
+
+
+
+
+/* MENU */
 
 nav ul{
 
@@ -124,17 +156,19 @@ nav ul{
 
 }
 
+
 nav a{
 
     text-decoration:none;
 
     color:var(--text);
 
-    transition:var(--transition);
-
     font-weight:600;
 
+    transition:var(--transition);
+
 }
+
 
 nav a:hover{
 
@@ -142,13 +176,17 @@ nav a:hover{
 
 }
 
+
 nav a.activo{
 
     color:var(--primary);
 
 }
 
-/* HERO */
+
+
+/* ================= HERO ================= */
+
 
 .hero{
 
@@ -160,6 +198,26 @@ nav a.activo{
 
 }
 
+
+
+.hero-image{
+
+    width:100%;
+
+    max-width:750px;
+
+    height:auto;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    margin-bottom:30px;
+
+}
+
+
+
 .hero h1{
 
     font-size:48px;
@@ -169,6 +227,8 @@ nav a.activo{
     color:var(--primary-dark);
 
 }
+
+
 
 .hero p{
 
@@ -182,7 +242,10 @@ nav a.activo{
 
 }
 
-/* BOTÓN */
+
+
+/* BOTON */
+
 
 .boton{
 
@@ -200,11 +263,13 @@ nav a.activo{
 
     border-radius:50px;
 
-    transition:var(--transition);
-
     font-weight:bold;
 
+    transition:var(--transition);
+
 }
+
+
 
 .boton:hover{
 
@@ -214,13 +279,17 @@ nav a.activo{
 
 }
 
+
+
 /* SECCIONES */
+
 
 section{
 
     padding:80px 0;
 
 }
+
 
 section h2{
 
@@ -234,6 +303,7 @@ section h2{
 
 }
 
+
 section p{
 
     color:var(--text-light);
@@ -242,7 +312,10 @@ section p{
 
 }
 
+
+
 /* TARJETAS */
+
 
 .cards{
 
@@ -255,6 +328,8 @@ section p{
     margin-top:40px;
 
 }
+
+
 
 .card{
 
@@ -270,11 +345,15 @@ section p{
 
 }
 
+
+
 .card:hover{
 
     transform:translateY(-8px);
 
 }
+
+
 
 .card h3{
 
@@ -284,13 +363,18 @@ section p{
 
 }
 
+
+
 .card p{
 
     color:var(--text-light);
 
 }
 
-/* ABOUT */
+
+
+/* SECCIONES */
+
 
 .about{
 
@@ -298,7 +382,6 @@ section p{
 
 }
 
-/* SERVICIOS */
 
 .servicios{
 
@@ -306,7 +389,6 @@ section p{
 
 }
 
-/* COMPROMISO */
 
 .compromiso{
 
@@ -314,7 +396,10 @@ section p{
 
 }
 
+
+
 /* FOOTER */
+
 
 footer{
 
@@ -328,6 +413,8 @@ footer{
 
 }
 
+
+
 footer p{
 
     color:#CCCCCC;
@@ -336,7 +423,10 @@ footer p{
 
 }
 
+
+
 /* TABLAS */
+
 
 table{
 
@@ -348,6 +438,7 @@ table{
 
 }
 
+
 table th{
 
     background:var(--primary);
@@ -355,6 +446,7 @@ table th{
     color:white;
 
 }
+
 
 table th,
 table td{
@@ -365,7 +457,10 @@ table td{
 
 }
 
+
+
 /* LISTAS */
+
 
 ul{
 
@@ -373,7 +468,9 @@ ul{
 
 }
 
+
 /* ENLACES */
+
 
 a{
 
@@ -381,15 +478,20 @@ a{
 
 }
 
-/* RESPONSIVE */
+
+
+/* ================= RESPONSIVE ================= */
+
 
 @media(max-width:900px){
+
 
 header .container{
 
     flex-direction:column;
 
 }
+
 
 nav ul{
 
@@ -401,11 +503,13 @@ nav ul{
 
 }
 
+
 .hero h1{
 
     font-size:36px;
 
 }
+
 
 section h2{
 
@@ -413,9 +517,13 @@ section h2{
 
 }
 
+
 }
 
+
+
 @media(max-width:600px){
+
 
 .hero{
 
@@ -423,11 +531,15 @@ section h2{
 
 }
 
+
+
 .hero h1{
 
     font-size:30px;
 
 }
+
+
 
 .hero p{
 
@@ -435,17 +547,33 @@ section h2{
 
 }
 
+
+
 .logo{
 
     font-size:24px;
 
 }
 
+
+
+.logo img{
+
+    width:45px;
+
+    height:45px;
+
+}
+
+
+
 nav ul{
 
     gap:12px;
 
 }
+
+
 
 .boton{
 
@@ -454,29 +582,7 @@ nav ul{
     text-align:center;
 
 }
-   
-.logo{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    font-size:28px;
-    font-weight:bold;
-    color:#2E7D32;
-}
-
-.logo img{
-    width:55px;
-    height:55px;
-    object-fit:contain;
-}
 
 
-.hero-image{
-    width:100%;
-    max-width:750px;
-    height:auto;
-    border-radius:15px;
-    margin-bottom:30px;
 }
-
-}
+```
