@@ -112,35 +112,26 @@ header .container{
 
 /* LOGO */
 
-.logo{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:12px;
-
-    color:var(--primary);
-
-    font-size:28px;
-
-    font-weight:bold;
-
-}
 
 
-.logo img{
 
-    width:55px;
+/* Logo pequeño del encabezado */
 
-    height:55px;
+header .logo img{
+
+    width:40px;
+
+    height:40px;
+
+    max-width:40px;
+
+    max-height:40px;
 
     object-fit:contain;
 
     display:block;
 
 }
-
 
 
 
@@ -565,6 +556,9 @@ section h2{
 
 }
 
+img{
+    width:100%;
+}
 
 
 nav ul{
